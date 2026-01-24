@@ -1,5 +1,4 @@
 import { ButtonHTMLAttributes } from "react";
-import { Link } from "react-router-dom";
 
 type Variant = "primary" | "secondary" | "ghost";
 
@@ -22,9 +21,9 @@ const Button = ({ variant = "primary", href, className, ...props }: ButtonProps)
 
   if (href) {
     return (
-      <Link to={href} className={classes}>
+      <a href={href} className={classes}>
         {props.children}
-      </Link>
+      </a>
     );
   }
 
