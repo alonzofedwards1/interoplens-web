@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+.container-base {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
