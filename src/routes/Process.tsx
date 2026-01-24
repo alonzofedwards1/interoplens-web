@@ -1,6 +1,7 @@
 import Card from "../components/Card";
 import Section from "../components/Section";
 import SEO from "../components/SEO";
+import { useGsapReveal } from "../hooks/useGsapReveal";
 
 const steps = [
   {
@@ -22,6 +23,8 @@ const steps = [
 ];
 
 const Process = () => {
+  useGsapReveal(".process-card");
+
   return (
     <div>
       <SEO title="Process | Interoplens" />
@@ -31,7 +34,12 @@ const Process = () => {
       >
         <div className="grid gap-6 md:grid-cols-2">
           {steps.map((step) => (
-            <Card key={step.title} title={step.title} description={step.description} />
+            <Card
+              key={step.title}
+              title={step.title}
+              description={step.description}
+              className="process-card"
+            />
           ))}
         </div>
       </Section>

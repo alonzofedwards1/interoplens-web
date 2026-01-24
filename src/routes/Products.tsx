@@ -1,6 +1,7 @@
 import Card from "../components/Card";
 import Section from "../components/Section";
 import SEO from "../components/SEO";
+import { useGsapReveal } from "../hooks/useGsapReveal";
 
 const products = [
   {
@@ -26,6 +27,8 @@ const products = [
 ];
 
 const Products = () => {
+  useGsapReveal(".product-card");
+
   return (
     <div>
       <SEO title="Products | Interoplens" />
@@ -39,6 +42,7 @@ const Products = () => {
               key={product.title}
               title={product.title}
               description={product.description}
+              className="product-card"
             />
           ))}
         </div>
