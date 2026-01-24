@@ -2,18 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-  @apply bg-slate-50 text-slate-900;
-}
-
-.container-base {
-  @apply mx-auto w-full max-w-6xl px-6;
-}
-
 @layer base {
+  body {
+    @apply bg-slate-50 text-slate-900;
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+
   input,
   textarea {
     @apply focus:outline-none focus:ring-2 focus:ring-blue-500/30;
+  }
+}
+
+@layer components {
+  .container-base {
+    @apply mx-auto w-full max-w-6xl px-6;
   }
 }
