@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
     <footer className="border-t border-mist bg-white">
       <div className="container-base flex flex-col gap-6 py-10 md:flex-row md:items-center md:justify-between">
-        <div className="space-y-2">
-          <p className="text-sm font-semibold text-ink">Interoplens</p>
+        <div className="space-y-3">
+          <div className="flex items-center gap-3">
+            <Logo />
+            <p className="text-sm font-semibold text-ink">Interoplens</p>
+          </div>
           <p className="text-sm text-slate">
             Interoperability observability and operational clarity for the TEFCA era.
           </p>
