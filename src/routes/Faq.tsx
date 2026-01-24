@@ -26,9 +26,9 @@ const Faq = () => {
       <Section title="FAQ" subtitle="Common questions about pilots and observability.">
         <div className="space-y-4">
           {faqs.map((faq) => (
-            <div key={faq.question} className="rounded-xl border border-mist p-5">
-              <p className="font-semibold text-ink">{faq.question}</p>
-              <p className="mt-2 text-sm text-slate">{faq.answer}</p>
+            <div key={faq.question} className="rounded-lg border border-slate-200 bg-white p-5">
+              <p className="font-semibold text-slate-900">{faq.question}</p>
+              <p className="mt-2 text-sm text-slate-600">{faq.answer}</p>
             </div>
           ))}
         </div>

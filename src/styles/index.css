@@ -4,6 +4,7 @@
 
 body {
   font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  @apply bg-slate-50 text-slate-900;
 }
 
 .container-base {
@@ -13,6 +14,6 @@ body {
 @layer base {
   input,
   textarea {
-    @apply focus:outline-none focus:ring-2 focus:ring-ink/30;
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-500/30;
   }
 }

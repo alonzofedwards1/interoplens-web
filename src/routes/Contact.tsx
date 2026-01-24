@@ -28,9 +28,12 @@ const Contact = () => {
       <SEO title="Contact | Interoplens" />
       <Section title="Contact" subtitle="Tell us about your interoperability goals.">
         <div className="grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
-          <form onSubmit={handleSubmit} className="space-y-5 rounded-2xl border border-mist p-6">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+          >
             <div className="space-y-2">
-              <label className="text-sm font-medium text-ink" htmlFor="name">
+              <label className="text-sm font-medium text-slate-900" htmlFor="name">
                 Name
               </label>
               <input
@@ -39,11 +42,11 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full rounded-lg border border-mist px-3 py-2 text-sm"
+                className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900"
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-medium text-ink" htmlFor="email">
+              <label className="text-sm font-medium text-slate-900" htmlFor="email">
                 Email
               </label>
               <input
@@ -53,11 +56,11 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full rounded-lg border border-mist px-3 py-2 text-sm"
+                className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900"
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-medium text-ink" htmlFor="organization">
+              <label className="text-sm font-medium text-slate-900" htmlFor="organization">
                 Organization
               </label>
               <input
@@ -65,11 +68,11 @@ const Contact = () => {
                 name="organization"
                 value={formData.organization}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-mist px-3 py-2 text-sm"
+                className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900"
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-medium text-ink" htmlFor="message">
+              <label className="text-sm font-medium text-slate-900" htmlFor="message">
                 Message
               </label>
               <textarea
@@ -79,15 +82,15 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 rows={4}
-                className="w-full rounded-lg border border-mist px-3 py-2 text-sm"
+                className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900"
               />
             </div>
             <Button type="submit" variant="primary">
               Send message
             </Button>
           </form>
-          <div className="space-y-4 text-slate">
-            <p className="text-base font-semibold text-ink">Contact email</p>
+          <div className="space-y-4 text-slate-600">
+            <p className="text-base font-semibold text-slate-900">Contact email</p>
             <p>contact@interoplens.com</p>
             <p className="text-sm">
               We respond within two business days and can schedule a discovery call as part of

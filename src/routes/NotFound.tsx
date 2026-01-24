@@ -9,7 +9,7 @@ const NotFound = () => {
       <Section title="Page not found" subtitle="We could not find the page you requested.">
         <Link
           to="/"
-          className="inline-flex items-center text-sm font-semibold text-ink hover:underline"
+          className="inline-flex items-center text-sm font-semibold text-blue-600 hover:underline"
         >
           Return to home
         </Link>

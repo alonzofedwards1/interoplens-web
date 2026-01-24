@@ -7,21 +7,21 @@ const Home = () => {
   return (
     <div>
       <SEO title="Interoplens | Interoperability Observability" />
-      <div className="bg-slate text-white">
-        <div className="container-base py-3 text-sm">
+      <div className="rounded-lg border border-blue-100 bg-blue-50">
+        <div className="container-base py-3 text-sm text-blue-900">
           Phase 0: Proof of Capability. Pilot program opening soon.
         </div>
       </div>
-      <section className="bg-white py-16">
-        <div className="container-base grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+      <section className="py-12 md:py-16">
+        <div className="container-base grid gap-10 rounded-2xl border border-slate-200 bg-white p-8 md:grid-cols-[1.2fr_0.8fr] md:items-center md:p-12">
           <div className="space-y-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-slate">
+            <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
               Interoperability operations, simplified
             </p>
-            <h1 className="text-3xl font-semibold text-ink md:text-4xl">
+            <h1 className="text-3xl font-semibold text-slate-900 md:text-4xl">
               Make TEFCA integration visible, explainable, and governable.
             </h1>
-            <p className="text-base text-slate md:text-lg">
+            <p className="text-base text-slate-600 md:text-lg">
               Interoplens provides observability for cross-network data exchange, turning
               protocol traffic into operational signals, execution narratives, and risk
               insights.
@@ -35,12 +35,12 @@ const Home = () => {
               </Button>
             </div>
           </div>
-          <div className="rounded-2xl border border-mist bg-mist/40 p-8">
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-8">
             <div className="space-y-4">
-              <div className="text-xs font-semibold uppercase tracking-wide text-slate">
+              <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
                 Signal highlights
               </div>
-              <ul className="space-y-3 text-sm text-slate">
+              <ul className="space-y-3 text-sm text-slate-600">
                 <li>Execution traces across IHE, FHIR, X12, and custom interfaces.</li>
                 <li>Live governance views for throughput, failure patterns, and trust posture.</li>
                 <li>Risk register aligned to compliance, SLAs, and partner commitments.</li>
@@ -73,7 +73,10 @@ const Home = () => {
             "Health IT vendors",
             "TEFCA and QHIN ecosystem participants"
           ].map((label) => (
-            <div key={label} className="rounded-xl border border-mist p-5 text-sm text-slate">
+            <div
+              key={label}
+              className="rounded-lg border border-slate-200 bg-white p-5 text-sm text-slate-600"
+            >
               {label}
             </div>
           ))}

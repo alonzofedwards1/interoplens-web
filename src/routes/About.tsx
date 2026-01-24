@@ -9,7 +9,7 @@ const About = () => {
         title="About Interoplens"
         subtitle="Born from operational pain and built for interoperability leaders."
       >
-        <div className="space-y-4 text-slate">
+        <div className="space-y-4 text-slate-600">
           <p>
             Interoplens started with a recurring challenge: interoperability programs were
             running on spreadsheets, manual reporting, and fragmented visibility. Teams were

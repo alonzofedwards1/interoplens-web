@@ -6,7 +6,7 @@ const Terms = () => {
     <div>
       <SEO title="Terms of Service | Interoplens" />
       <Section title="Terms of Service" subtitle="Pilot-stage terms for website visitors.">
-        <div className="space-y-4 text-slate">
+        <div className="space-y-4 text-slate-600">
           <p>
             This website provides general information about Interoplens and does not create
             a service agreement. Any services are governed by a signed statement of work or

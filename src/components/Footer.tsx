@@ -1,27 +1,18 @@
 import { Link } from "react-router-dom";
-import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-mist bg-white">
-      <div className="container-base flex flex-col gap-6 py-10 md:flex-row md:items-center md:justify-between">
-        <div className="space-y-3">
-          <div className="flex items-center gap-3">
-            <Logo />
-            <p className="text-sm font-semibold text-ink">Interoplens</p>
-          </div>
-          <p className="text-sm text-slate">
-            Interoperability observability and operational clarity for the TEFCA era.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-4 text-sm text-slate">
-          <Link to="/privacy" className="hover:text-ink">
+    <footer className="border-t border-slate-200 bg-white py-6 text-sm text-slate-500">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-6 md:flex-row md:items-center md:justify-between">
+        <span>© 2026 Interoplens. All rights reserved.</span>
+        <div className="flex flex-wrap gap-4">
+          <Link to="/privacy" className="hover:text-slate-900">
             Privacy Policy
           </Link>
-          <Link to="/terms" className="hover:text-ink">
+          <Link to="/terms" className="hover:text-slate-900">
             Terms of Service
           </Link>
-          <Link to="/faq" className="hover:text-ink">
+          <Link to="/faq" className="hover:text-slate-900">
             FAQ
           </Link>
         </div>

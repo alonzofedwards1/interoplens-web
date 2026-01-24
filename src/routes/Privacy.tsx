@@ -6,7 +6,7 @@ const Privacy = () => {
     <div>
       <SEO title="Privacy Policy | Interoplens" />
       <Section title="Privacy Policy" subtitle="A simple policy for a pilot-stage company.">
-        <div className="space-y-4 text-slate">
+        <div className="space-y-4 text-slate-600">
           <p>
             Interoplens collects only the information you provide through contact forms or
             discovery conversations. We use the data solely to respond to inquiries and to

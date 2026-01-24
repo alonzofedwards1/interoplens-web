@@ -8,10 +8,10 @@ interface CardProps {
 
 const Card = ({ title, description, children }: CardProps) => {
   return (
-    <div className="rounded-xl border border-mist bg-white p-6 shadow-sm">
+    <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
       <div className="space-y-3">
-        <h3 className="text-lg font-semibold text-ink">{title}</h3>
-        <p className="text-sm text-slate md:text-base">{description}</p>
+        <h3 className="text-lg font-semibold text-slate-900">{title}</h3>
+        <p className="text-sm text-slate-600 md:text-base">{description}</p>
         {children}
       </div>
     </div>
